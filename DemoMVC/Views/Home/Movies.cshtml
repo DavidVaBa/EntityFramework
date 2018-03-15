@@ -1,0 +1,45 @@
+﻿@using DemoMVC.Models
+@model IEnumerable<Movie>
+
+@{
+    ViewData["Title"] = "Movies";
+}
+
+<h2>Movies</h2>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Title</th>
+    </tr>
+    @foreach (var movie in Model)
+    {
+    <tr>
+        <td style="border: 1px solid black">@movie.Id</td>
+        <td style="border: 1px solid black">@movie.Title</td>
+        <td style="border: 1px solid black">@movie.Genre</td>
+        <td style="border: 1px solid black">@movie.ReleaseYear</td>
+        <td><button>@Html.ActionLink("Details", "Detailss", "Home", movie)</button></td>
+        <td><button>@Html.ActionLink("Update", "UpdateForm", "Home", movie)</button></td>
+        <td><button>@Html.ActionLink("Delete", "Delete", "Home", movie)</button></td>
+    </tr>
+    }
+    <tr>
+        <td><button>@Html.RouteLink("Create", new { action = "Create", controller = "Home" })</button></td>
+        <td><button>@Html.ActionLink("Back", "Back", "Home")</button></td>
+    </tr>
+</table>
+
+<style>
+    button a {
+        text-decoration: none;
+        color: black;
+    }
+
+        button a:visited {
+            color: black;
+        }
+
+    td, th {
+        padding: 3px;
+    }
+</style>

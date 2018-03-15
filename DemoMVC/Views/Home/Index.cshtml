@@ -1,0 +1,64 @@
+﻿@using DemoMVC.Models
+@model Filter
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<div>
+    @Html.ActionLink("All Movies", "Movies", "Home")
+</div>
+
+<br />
+<br />
+
+<div>
+    @{
+        List<SelectListItem> options = new List<SelectListItem>();
+        List<SelectListItem> order = new List<SelectListItem>();
+
+        options.Add(new SelectListItem
+        {
+            Text = "Search by Title",
+            Value = "Title"
+        });
+
+        options.Add(new SelectListItem
+        {
+            Text = "Search by Genre",
+            Value = "Genre",
+
+        });
+
+        options.Add(new SelectListItem
+        {
+            Text = "Search by Release Year",
+            Value = "ReleaseYear",
+
+        });
+
+        order.Add(new SelectListItem
+        {
+            Text = "Asc",
+            Value = "asc",
+
+        });
+
+        order.Add(new SelectListItem
+        {
+            Text = "Desc",
+            Value = "desc",
+
+        });
+    }
+    @using (Html.BeginForm("Filter", "Home", Model))
+    {
+
+        @Html.TextBoxFor(model => model.search, new { required = "required" })
+        @Html.DropDownListFor(model => model.order, order, "Select an option", new { required = "required" })
+        @Html.DropDownListFor(model => model.option, options, "Select an option", new { required = "required" })
+        <input type="submit" name="FilterButton" value="Filter By Name" />
+    }
+</div>

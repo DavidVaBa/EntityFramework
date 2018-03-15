@@ -1,0 +1,44 @@
+﻿@using DemoMVC.Models
+@model Movie
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Detailss</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th style="border: 1px solid black">Id</th>
+            <th style="border: 1px solid black">Title</th>
+            <th style="border: 1px solid black">Release Year</th>
+            <th style="border: 1px solid black">Genre</th>
+        </tr>
+    </thead>
+    <tr>
+        <td style="border: 1px solid black">@Model.Id</td>
+        <td style="border: 1px solid black">@Model.Title</td>
+        <td style="border: 1px solid black">@Model.ReleaseYear</td>
+        <td style="border: 1px solid black">@Model.Genre</td>
+    </tr>
+    <tr>
+        <td><button>@Html.ActionLink("Back", "Back", "Home")</button></td>
+    </tr>
+</table>
+
+<style>
+    button a {
+        text-decoration: none;
+        color: black;
+    }
+
+    button a:visited {
+        color: black;
+    }
+
+    td, th{
+        padding: 3px;
+    }
+</style>
+

@@ -1,0 +1,48 @@
+﻿@using DemoMVC.Models
+@model Movie
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm("Save", "Home", Model))
+{
+<table>
+    <tr>
+        <td>@Html.DisplayNameFor(Model => Model.Title)</td>
+        <td>@Html.TextBoxFor(Model => Model.Title)</td>
+    </tr>
+    <tr>
+        <td>@Html.DisplayNameFor(Model => Model.ReleaseYear)</td>
+        <td>@Html.TextBoxFor(Model => Model.ReleaseYear)</td>
+    </tr>
+    <tr>
+        <td>@Html.DisplayNameFor(Model => Model.Genre)</td>
+        <td>@Html.TextBoxFor(Model => Model.Genre)</td>
+    </tr>
+
+    <tr>
+        <td><input type="submit" name="SaveButton" value="Save" /></td>
+        <td><button>@Html.ActionLink("Cancel", "Back", "Home")</button></td>
+    </tr>
+</table>
+}
+
+<style>
+    tr td:first-of-type{
+        font-weight: bold;
+        text-transform: capitalize;
+        padding-right: 10px;
+    }
+
+    button a {
+        text-decoration: none;
+        color: black;
+    }
+
+    button a:visited {
+        color: black;
+    }
+</style>

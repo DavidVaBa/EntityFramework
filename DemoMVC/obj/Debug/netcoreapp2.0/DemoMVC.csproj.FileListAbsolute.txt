@@ -1,0 +1,11 @@
+c:\users\djvargas\source\repos\DemoMVC\DemoMVC\bin\Debug\netcoreapp2.0\DemoMVC.deps.json
+c:\users\djvargas\source\repos\DemoMVC\DemoMVC\bin\Debug\netcoreapp2.0\DemoMVC.runtimeconfig.json
+c:\users\djvargas\source\repos\DemoMVC\DemoMVC\bin\Debug\netcoreapp2.0\DemoMVC.runtimeconfig.dev.json
+c:\users\djvargas\source\repos\DemoMVC\DemoMVC\bin\Debug\netcoreapp2.0\DemoMVC.dll
+c:\users\djvargas\source\repos\DemoMVC\DemoMVC\obj\Debug\netcoreapp2.0\DemoMVC.csprojResolveAssemblyReference.cache
+c:\users\djvargas\source\repos\DemoMVC\DemoMVC\obj\Debug\netcoreapp2.0\DemoMVC.csproj.CoreCompileInputs.cache
+c:\users\djvargas\source\repos\DemoMVC\DemoMVC\obj\Debug\netcoreapp2.0\DemoMVC.AssemblyInfoInputs.cache
+c:\users\djvargas\source\repos\DemoMVC\DemoMVC\obj\Debug\netcoreapp2.0\DemoMVC.AssemblyInfo.cs
+c:\users\djvargas\source\repos\DemoMVC\DemoMVC\bin\Debug\netcoreapp2.0\DemoMVC.pdb
+c:\users\djvargas\source\repos\DemoMVC\DemoMVC\obj\Debug\netcoreapp2.0\DemoMVC.dll
+c:\users\djvargas\source\repos\DemoMVC\DemoMVC\obj\Debug\netcoreapp2.0\DemoMVC.pdb
